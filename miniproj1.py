@@ -5,7 +5,7 @@ while True:
  guess =int (input("Guess: "))
  attempts +=1
  if guess==secret:
-   print(f"correct{attempts}attempts")
+   print(f"correct🙌{attempts}attempts")
    break
  elif guess < secret:
    print("too low")
