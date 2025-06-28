@@ -4,7 +4,7 @@
 #     return sum     
 # print(sum(2,3))       #funt_name(argument1,arg2)
 
-#vowel
+#vowels
 def count_vowels(s):
     vowels = "aeiouAEIOU"
     count = 0
@@ -30,3 +30,14 @@ def find_mean(numbers):
 data = [5, 10, 15, 20]
 average = find_mean(data)
 print("Mean of the list:", average)
+
+#factorial
+def factorial_iter(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+# Calling the function
+num = 5
+print("Factorial of", num, "is:", factorial_iter(num))
