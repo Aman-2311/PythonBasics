@@ -20,3 +20,12 @@ def print_n_to_1(n):
 # Example:
 print_n_to_1(5)
 # Output: 5 4 3 2 1
+
+
+# Recursive factorial
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+print("Factorial of 5:", factorial(5))
