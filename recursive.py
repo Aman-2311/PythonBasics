@@ -22,6 +22,17 @@ print_n_to_1(5)
 # Output: 5 4 3 2 1
 
 
+# Print 1 to N recursively
+def print_1_to_n(n):
+    if n == 0:
+        return
+    print_1_to_n(n - 1)
+    print(n)
+
+print_1_to_n(5)
+# Output: 1 2 3 4 5
+
+
 # Recursive factorial
 def factorial(n):
     if n == 0 or n == 1:
