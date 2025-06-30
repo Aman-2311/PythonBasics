@@ -4,13 +4,14 @@
 # Recursive Case (calling the function itself with smaller input)
 
 # Function should always move towards the base case
-def sum_natural(n):
-    if n == 1:
-        return 1
-    else:
-        return n * (n+1)//2
-print(sum_natural(5))
 
+def sum_natural(n):
+    if n == 0:
+        return 0
+    return n + sum_natural(n - 1)
+
+num = int(input("Enter a number to find sum from 1 to n: "))
+print("Sum is:", sum_natural(num))
 
 
 
@@ -53,3 +54,16 @@ def fibonacci(n):
     return fibonacci(n - 1) + fibonacci(n - 2)
 
 print("Fibonacci(5):", fibonacci(5))
+
+
+#Countdown with Input
+def countdown(n):
+    if n == 0:
+        print("Done!")
+        return
+    print(n)
+    countdown(n - 1)
+
+# Get input from user
+num = int(input("Enter a number to start countdown: "))
+countdown(num)
