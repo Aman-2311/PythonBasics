@@ -41,3 +41,15 @@ def factorial_iter(n):
 # Calling the function
 num = 5
 print("Factorial of", num, "is:", factorial_iter(num))
+
+
+#Find Maximum of Two Numbers
+def find_max(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+print("The greater number is:", find_max(x, y))
