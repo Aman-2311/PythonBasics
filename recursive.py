@@ -1,12 +1,17 @@
+#  Conditions to Write Recursive Function
+# Base Case (stopping condition)
+
+# Recursive Case (calling the function itself with smaller input)
+
+# Function should always move towards the base case
 def sum_natural(n):
     if n == 1:
         return 1
     else:
-        return n + sum_natural(n - 1)
+        return n * (n+1)//2
+print(sum_natural(5))
 
-# Calling the function
-n = 5
-print("Sum of first", n, "natural numbers:", sum_natural(n))
+
 
 
 #print N to 1
