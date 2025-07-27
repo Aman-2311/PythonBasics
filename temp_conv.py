@@ -28,4 +28,4 @@ elif choice == 2:
 
 # If user enters an invalid choice
 else:
-    print("Invalid choice!")
+    print("Invalid choice. Please enter 1 or 2.")

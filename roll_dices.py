@@ -1,4 +1,4 @@
-import numpy as np
+import data as np
 import random
 
 def roll_dice():

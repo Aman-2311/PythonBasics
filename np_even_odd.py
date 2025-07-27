@@ -1,4 +1,4 @@
-import numpy as np
+import data as np
 
 n = input("Enter a number: ")
 digits = np.array([int(d) for d in n if d.isdigit()])

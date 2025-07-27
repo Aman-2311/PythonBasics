@@ -1,5 +1,5 @@
 #steps
-import numpy as np
+import data as np
 user_steps = int(input("Enter the number of steps: "))
 steps = np.random.choice([1,-1],size =user_steps)
 position = np.cumsum(steps)
